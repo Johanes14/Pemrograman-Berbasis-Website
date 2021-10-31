@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" text="text/css">
+        <title> Formulir PPDB JALUR ZONASI TAHUN 2021 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Formulir PPDB JALUR ZONASI TAHUN 2021</h2>
+        <p> INFO PENDAFTARAN:</p>
+        <div>
+            <form>
+              <label for="fname">NISN:</label>
+              <input type="text" id="fname" name="NISN" placeholder="0013xxxxx...">
+              <label for="lname">Asal Sekolah:</label>
+              <input type="text" id="lname" name="Asal" placeholder="SMP/SMA/SMK">
+              <label for="lname">Lampiran Fotocopy Ijasah:</label><br>
+              <div class="choose_file">
+                  <button type="button" class="btn btn-default" style="width: 125px;">.pdf or .jpg</button>
+                  <input name="img" type="file" />
+              </div>
+            </form>
+        </div>
+        <p>DATA CALON PESERTA:</p>
+        <div>
+          <label for="fname">Nama Lengkap:</label>
+          <input type="text" id="fname" name="Nl" placeholder="Nama Lengkap">
+          <label for="fname">NIK:</label>
+          <input type="text" id="fname" name="NIK" placeholder="3374xxxxx....">
+          <label for="fname">Tanggal Lahir:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <label for="lname">Lampiran Fotocopy Akte Kelahiran yang telah dilegalisir:</label><br>
+          <div class="choose_file">
+            <button type="button" class="btn btn-default" style="width: 125px;">.pdf or .jpg</button>
+            <input name="img" type="file" />
+          </div><br><br>
+          <label for="fname">Jenis Kelamin:</label>
+          <input type="radio" id="html" name="fav_language" value="L2">
+          <label for="html">Laki - Laki</label>
+          <input type="radio" id="css" name="fav_language" value="P">
+          <label for="css">Perempuan</label><br><br>
+          <label for="fname">Alamat Lengkap:</label>
+          <input type="text" id="fname" name="Nl" placeholder="dengan tambahan (Desa/Kel, Kec, Kel, dan Prov)">
+          <label for="fname">Email Aktif:</label>
+          <input type="text" id="fname" name="Nl" placeholder="contoh: yyy@domain.com">
+        </div>
+        <p>DATA ORANGTUA:</p>
+        <div>
+          <label for="fname">Nomor Kartu Keluarga:</label>
+          <input type="text" id="fname" name="Nl" placeholder="3374xxxxxx....">
+          <label for="fname">Nomor Ayah Kandung:</label>
+          <input type="text" id="fname" name="Nl" placeholder="Nama Lengkap Ayah Kandung">
+          <label for="country">Agama</label>
+          <select id="country" name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+          </select>
+          <label for="fname">Pekerjaan:</label>
+          <input type="text" id="fname" name="Nl" placeholder="Diisi dengan Profesi, misalnya: PNS, GURU, TENTARA, POLISI, dan lain - lain">
+          <label for="fname">Nomor Ibu Kandung:</label>
+          <input type="text" id="fname" name="Nl" placeholder="Nama Lengkap Ibu Kandung">
+          <label for="country">Agama</label>
+          <select id="country" name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+          </select>
+          <label for="fname">Pekerjaan:</label>
+          <input type="text" id="fname" name="Nl" placeholder="Diisi dengan Profesi, misalnya: PNS, GURU, TENTARA, POLISI, dan lain - lain">
+          <label for="fname">Alamat Lengkap:</label>
+          <input type="text" id="fname" name="Nl" placeholder="dengan tambahan (Desa/Kel, Kec, Kel, dan Prov)">
+          <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>
