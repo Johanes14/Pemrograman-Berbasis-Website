@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Contoh Element Semantik Audio </title>
+</head>
+<body>
+    <h1> Contoh Audio di HTML </h1>
+    <p> Judul : Frank Sinatra - Fly Me To The Moon (cover by The Jazzifiers - Daniel Zamfir & Marius Pop)</p>
+    <audio autoplay controls id="audio1">
+        <source src="Frank Sinatra - Fly Me To The Moon (cover by The Jazzifiers - Daniel Zamfir & Marius Pop).mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade dong!
+    </audio>
+    <script type="text/javascript">
+        var audio = document.getElementById("audio1");
+        audio.volume = 0.2;
+        window.onload=function autoplay(){
+            var r =confirm("Would You Like To AutoPlay Music?");
+            if (r == true) {
+                document.getElementById("audio1").play();
+            }
+          }
+      </script>
+</body>
+
