@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", "Play", sans-serif;
+    transform: scale(0.8);
+    transform-origin: 0 5;
+}
+/* NAVIGATION */
+.nav-container{
+    background: #FFFFFA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 84px;
+    margin-top: -65px;
+    z-index: 500px;
+    position: relative;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+nav ul{
+    display: flex;
+}
+nav .logo{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: #021718;
+}
+.nav-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+.nav-items li:nth-last-of-type(1){
+    margin: 0;
+}
+.nav-items li a{
+    top: -1px;
+    color: #021718;
+    font-size: 24px;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+/* NAVIGATION */
+
+/* HEADER */
+.header-container{
+    background: #F79545 url('iconpacks/Vector 1.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh-72px);
+    display: flex;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header h1{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 96px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+header p{
+    width: 671px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 48px;
+}
+header a{
+    font-size: 24px;
+    color: #FFFFFA;
+    text-decoration: none;
+    background: #01847F;
+    border-radius: 10px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 500ms;
+}
+header a:hover{
+    transform: translateY(-20px);
+}
+/* HEADER */
+
+/* SOCIAL ICON */
+.social-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.social-icons a {
+    margin: 0 48px;
+    transition: 500ms;
+}
+.social-icons a:nth-last-of-type(1){
+    margin-left: 1;
+}
+.social-icons a:hover{
+    transform: translateY(-20px);
+}
+.social-icons p{
+    position: absolute;
+    width: 407px;
+    height: 45px;
+    left: 190px;
+    top: 768px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+/* SOCIAL ICON */
+
+/* HERO IMAGES*/
+header .hero-image{
+    position: relative;
+}
+header .hero-image img{
+    transition: 500ms;
+    position: relative;
+    z-index: 200;
+}
+header .hero-image img:hover{
+    transform: rotate(-5.5deg);
+}
+header .hero-image .photo-layer{
+    position: absolute;
+    width: 500px;
+    height: 651px;
+    left: 60px;
+    top: 90px;
+    background: #1345C5;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.5);
+    border-radius: 33px;
+    transform: rotate(-10deg);
+}
+/* HERO IMAGES*/
+
+/* SEARCH BOX*/
+.search-box{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+    top: 0;
+    transition: 500ms;
+}
+.search-box.active{
+    top: 72px;
+}
+.search-box input {
+    background: #FFFFFA;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 8px 8px;
+    font-size: 24px;
+    line-height: 42px;
+    border: 0;
+    padding: 12px 48px;
+}
+.search-box input::placeholder{
+    color: #b3b3b3;
+}
+/* SEARCH BOX*/
+
+/* SEARCH AND CLOSE BUTTONS*/
+.nav-btn-container{
+    display: flex;
+    position: relative;
+}
+.nav-btn-container  img {
+    position: absolute;
+}
+.nav-btn-container .close-btn{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 500ms;
+}
+.nav-btn-container .search-btn{
+    pointer-events: auto;
+    transition: 500ms;
+}
+.nav-btn-container.active .search-btn{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+}
+.nav-btn-container.active .close-btn{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+/* SEARCH AND CLOSE BUTTONS*/
