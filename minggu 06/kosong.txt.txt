@@ -1,4 +1,6 @@
-Maaf jika masih ada Bugs soalnya dibuat 2 hari sebelum deadline 
-1. Foto Profil 
-2. Search Bar
-3. Scale pada Screen 
+Maaf jika masih ada Bugs dan Kekurangan dalam website statis soalnya dibuat 1 hari sebelum deadline 
+1. Foto Profil dan Foto Layer yang posisinya tidak pas
+2. Search Bar yang ketutupan oleh Foto Profil
+3. saat 100% scale penaruhan posisi menjadi berantakan, untuk melihatnya menggunakan scale 75% saja
+4. kurang CV, About Me, Video, Foto dan Icon
+Mohon Maaf apabila adanya kekurangan dalam tugas minggu ke-6 ini
